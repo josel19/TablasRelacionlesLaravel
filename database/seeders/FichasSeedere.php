@@ -16,8 +16,8 @@ class FichasSeedere extends Seeder
     {
         //
         DB::table('fichas')->insert([
-            'Nombre_ficha' => 'Adsi_58',
-            'Coordinacion' => 'Sede tic',
+            'nombre_ficha' => 'Adsi_58',
+            'coordinacion' => 'Sede tic',
         ]);
     }
 }

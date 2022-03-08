@@ -9,19 +9,21 @@
     <th scope="col" >Direccion</th>
     <th scope="col" >Correo</th>
     <th scope="col" >Edad</th>
-    <th scope="col" >Id_ficha</th>
+    <th scope="col" >Nombre Ficha</th>
+    <th scope="col" >Coordinacion</th>
 
  </thead>
  <tbody>
     @foreach ($aprendices as $aprendiz) 
        <tr>
          <th scope="row"> {{$aprendiz->id}} </th>
-         <td>  {{$aprendiz->Nombre}} </td>
-         <td>  {{$aprendiz->Apellido}} </td>
-         <td>  {{$aprendiz->Telefono}} </td>
-         <td>  {{$aprendiz->Direccion}} </td>
-         <td>  {{$aprendiz->Correo}} </td>
-         <td>  {{$aprendiz->Edad}} </td>
-         <td>  {{$aprendiz->ficha_id}} </td>
+         <td>  {{$aprendiz->nombre}} </td>
+         <td>  {{$aprendiz->apellido}} </td>
+         <td>  {{$aprendiz->telefono}} </td>
+         <td>  {{$aprendiz->direccion}} </td>
+         <td>  {{$aprendiz->correo}} </td>
+         <td>  {{$aprendiz->edad}} </td>
+         <td>  {{$aprendiz->fichas->nombre_ficha}} </td>
+         <td>  {{$aprendiz->fichas->coordinacion}} </td>
      </tr>
   @endforeach

@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\AprendicesController;
+use App\Http\Controllers\VistasControlador;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,4 +13,4 @@ use App\Http\Controllers\AprendicesController;
 |
 */
 
-Route::resource('aprendices',AprendicesController::class);
+Route::resource('/',VistasControlador::class);
